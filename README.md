@@ -13,7 +13,7 @@ This program is based on the [realtime-geolocation-demo of Dmitri Voronianski](h
 - clone the repository
 - npm install
 - bower install
-- browse to _http://http://localhost:3000/_
+- browse to _http://localhost:3000/_
 
 
 ## Screen Shot
