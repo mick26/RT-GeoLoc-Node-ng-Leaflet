@@ -19,7 +19,7 @@ This program is based on the [realtime-geolocation-demo of Dmitri Voronianski](h
 ## Screen Shot
 
 <div align="center">
-		<img width="95%" src="screenshot/screenshot1.png" alt="RT GeoLocation Map" title="RT GeoLocation Map"</img>
+		<img width="95%" src="screenshot/screenshot1.PNG" alt="RT GeoLocation Map" title="RT GeoLocation Map"</img>
 </div>
 
 <hr>
