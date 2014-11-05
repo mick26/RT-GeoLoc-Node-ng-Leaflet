@@ -1,0 +1,52 @@
+<!-- 
+
+Ref.
+https://github.com/voronianski/realtime-geolocation-demo
+-->
+
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Real-Time Geolocation Service with Node.js</title>
+	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+</head>
+
+<body ng-controller="MainCtrl">
+
+
+	<div class="wrapper">
+	  <header>
+	  	<h1>Real-Time Geolocation Service with Node.js</h1>
+	  	<div class="description">Using the HTML5 Geolocation API and Web Sockets to show the locations of visitors in real-time.</div>
+	  </header>
+	
+	  <!-- GeoLocation API Errors will be rendered here -->
+	  <p ng-bind="errorMsg"></p>
+
+	  <div class="app" ng-mousemove="mouseMoveAction()" ng-mouseleave="mouseLeaveAction()" >
+	  	<div id="infobox" class="infobox">{{infobox}}
+	  	{{errorMsg}}
+	  	</div>
+    	<!-- Map will be rendered here -->
+	  	<div id="map">To get this app to work you need to share your geolocation.</div>
+	  </div>
+	</div>
+
+	<!-- JS -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/leaflet/dist/leaflet.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+  	<!-- Brian Fords module for using Socket.io with Angular -->  
+    <script type="text/javascript" src="bower_components/angular-socket-io/socket.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services/services.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+
+</body>
+</html>
