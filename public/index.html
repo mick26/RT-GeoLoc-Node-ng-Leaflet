@@ -28,7 +28,7 @@ https://github.com/voronianski/realtime-geolocation-demo
 	  <!-- GeoLocation API Errors will be rendered here -->
 	  <p ng-bind="errorMsg"></p>
 
-	  <div class="app" ng-mousemove="mouseMoveAction()" ng-mouseleave="mouseLeaveAction()" >
+	  <div class="app" ng-mousemove="mouseMoveAction()" ng-click="mouseMoveAction()" ng-mouseleave="mouseLeaveAction()" >
 	  	<div id="infobox" class="infobox">{{infobox}}
 	  	{{errorMsg}}
 	  	</div>
